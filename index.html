@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="./style.css">
+<title>Todo App</title>
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="heading">
+
+    <div>
+      <h1>🚀 Productivity Todo</h1>
+      <p>Manage your tasks beautifully & efficiently</p>
+    </div>
+
+    <div class="stats">
+
+      <div class="card">
+        <h2 id="total">0</h2>
+        <span>Total</span>
+      </div>
+
+      <div class="card">
+        <h2 id="completed">0</h2>
+        <span>Completed</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- FORM -->
+
+  <div class="form">
+
+    <input
+      type="text"
+      id="title"
+      placeholder="Enter task title..."
+    >
+
+    <input
+      type="time"
+      id="time"
+    >
+
+    <textarea
+      id="description"
+      placeholder="Write task description..."
+    ></textarea>
+
+    <select id="priority">
+
+      <option value="high">
+        🔥 High Priority
+      </option>
+
+      <option value="medium">
+        ⚡ Medium Priority
+      </option>
+
+      <option value="low">
+        ✅ Low Priority
+      </option>
+
+    </select>
+
+    <button
+      class="add-btn"
+      onclick="addTask()"
+    >
+      + Add New Task
+    </button>
+
+  </div>
+
+  <!-- TASK LIST -->
+
+  <div
+    class="task-list"
+    id="taskList"
+  >
+
+    <div class="empty">
+      No tasks added yet...
+    </div>
+
+  </div>
+
+</div>
+
+
+</body>
+<script src="./script.js"></script>
+</html>
